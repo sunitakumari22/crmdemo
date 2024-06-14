@@ -1,0 +1,20 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.container{
+    display: flex; 
+   
+    
+}
+.container .card{
+    width: 500px;
+    margin: 1rem;
+    background-color: rgb(28, 101, 184);
+
+}
+.container .card .p-card{
+    background-color: rgb(28, 101, 184);
+}

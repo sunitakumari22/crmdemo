@@ -1,0 +1,39 @@
+
+<p-toast position="top-right"></p-toast>
+<div class="flex justify-content-center align-items-center h-full mt-5 h-100 w-100">
+<form [formGroup]="loginform" (ngSubmit)="loginuser()" >
+    <p-card header="SIGN IN">
+        <div class="field">
+            <div class="p-float-label">
+                <input id="float-input" formControlName="email" type="text" pInputText> 
+                <label for="float-input">email</label>
+            
+            <small *ngIf="email.invalid && email.dirty || email.touched" class="block p-error">
+                <div *ngIf="email.errors?.['required']" > Email is required</div>
+                <div *ngIf="email.errors?.['email']" > Email should be valid</div>
+            </small>
+            </div>
+        </div>
+        <div class="field">
+            <div class="p-float-label">
+                <input id="float-input" formControlName="password" type="text" pInputText> 
+                <label for="float-input">password</label>
+            
+            <small *ngIf="email.invalid && email.dirty || email.touched" class="block p-error">
+                <div *ngIf="Password.errors?.['required']" > password is required</div>
+                
+            </small>
+            </div>
+        </div> 
+        <div class="buttons flex justify-content-center">
+        
+            <button pButton type="submit" class="p-button-raised p-button-rounded flex justify-content-center align-items-center">SIGN IN</button>
+        </div>
+        <div class="mt-2" style="text-align: center;">
+          New User? <a routerLink="/register">Signup Now</a>
+        </div>
+        </p-card>
+    
+    
+</form>
+</div>

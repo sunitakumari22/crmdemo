@@ -1,0 +1,96 @@
+/*
+    
+}
+.container .card{
+    width: 600px;
+    margin: 10px;
+    
+
+}
+.container .card p {
+    background: #212121;
+
+}
+.container .card :hover{
+   color: brown;
+  
+
+} */
+.container{
+    display: flex; 
+    margin: 0px;
+    padding: 0px;
+}
+.dash-box{
+    transition: transform .2s;
+    cursor: pointer;
+    width: 600px;
+    margin: 10px;
+    height: 130px;
+   
+  }
+  .dash-box .monthly-views{
+    height: 100%;
+  }
+  .dash-box:hover{
+    transform: scale(1.03);
+  }
+  .overview-box{
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .read-more{
+   justify-content: flex-end; 
+  }
+  .read-more > p:hover {
+    color: red;
+  }
+  .read-more > p{
+    color: blue;
+  }
+  .flex-row{
+    display: flex;
+    padding: 0 5px 5px 0;
+  }
+  .cursor-pointer{
+    cursor: pointer;
+  }
+  .message-from{
+    transition: transform .2s; 
+  }
+  .message-from:hover{
+    transform: scale(1.01);
+  }
+  
+  @media screen and (min-width : 4001px){
+    .dash-box{
+      height: 12vh;
+      width: 300px;
+    }
+  
+    .overview-title{
+      padding: 2% 0 2% 0;
+      font-size: 3em !important;
+    }
+  
+    .overview-numbers{
+      font-size: 3em !important;
+    }
+  
+  }
+  
+  @media screen and (min-width : 2220px) and (max-width : 4000px) {
+    .dash-box{
+      height: 12vh;
+    }
+  
+    .overview-title{
+      padding: 2% 0 1% 0;
+      font-size: 2em !important;
+    }
+  
+    .overview-numbers{
+      font-size: 2em !important;
+    }
+  }
+  

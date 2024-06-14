@@ -1,0 +1,64 @@
+<p-toast position="top-left"></p-toast>
+<div class="container flex justify-content-center align-items-center  " style="flex-direction: column; margin-top: 30px; width: 100%; ">
+
+
+<form  [formGroup]="registerform" (ngSubmit)="submitDeatils()" >
+    <p-card class="w-50" header="SIGN UP" >
+        <div class="field">
+            <div class="p-float-label">
+                <input id="float-input"  formControlName="name" type="text" pInputText> 
+                <label for="float-input">name</label>
+            
+            <small *ngIf="name.invalid && name.dirty || name.touched" class="block p-error">
+                <div *ngIf="name.errors?.['required']" > name is required</div>
+                
+            </small>
+            </div>
+        </div> 
+        <div class="field">
+            <div class="p-float-label">
+                <input id="float-input"  formControlName="mobile"   type="text" pInputText> 
+                <label for="float-input">mobile</label>
+            
+            <small *ngIf="mobile.invalid && mobile.dirty || mobile.touched" class="block p-error">
+                <div *ngIf="mobile.errors?.['required']" > mobile is required</div>
+                
+            </small>
+            </div>
+        </div> 
+        <div class="field">
+            <div class="p-float-label">
+                <input id="float-input" formControlName="email"   type="text" pInputText> 
+                <label for="float-input">email</label>
+            
+            <small *ngIf="email.invalid  && email.dirty || email.touched" class="block p-error">
+                <div *ngIf="email.errors?.['required']" > Email is required</div>
+                <div *ngIf="email.errors?.['email']" > Email should be valid</div>
+            </small>
+            </div>
+        </div>
+        <div class="field">
+            <div class="p-float-label">
+                <input id="float-input"  formControlName="password"   type="text" pInputText> 
+                <label for="float-input">password</label>
+            
+            <small *ngIf="email.invalid && email.dirty || email.touched" class="block p-error">
+                <div *ngIf="Password.errors?.['required']" > password is required</div>
+                
+            </small>
+            </div>
+        </div> 
+        <div class="buttons flex justify-content-center align-items-center ">
+        
+            <button pButton type="submit" class="p-button-raised p-button-rounded flex justify-content-center align-items-center">SIGN IN</button>
+        </div>
+       
+        </p-card>
+    
+    
+</form>
+<div class="mt-2" >
+    Aready register <a routerLink="/login">Signin Now</a>
+  </div>
+</div>
+

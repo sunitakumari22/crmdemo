@@ -1,0 +1,54 @@
+<style>
+    .nav1.show a:hover{
+      color: blue;
+    }
+   </style>
+   <p-toast position="top-right"></p-toast>
+  <div class="container-fluid" [style]="{backgroundColor:'var(--primary-400)'}">
+    
+    <div class="row align-items-center py-3 ">
+        <div class="col-lg-3 d-none d-lg-block">
+            <a href="" class="text-decoration-none" style="display: flex;">
+                <button type="button" pButton pRipple icon="pi pi-bars"  ></button>
+                <h1 class="m-0 display-5 font-weight-semi-bold"  style="color: hwb(214 93% 1%);">CRM Dev</h1>
+            </a>
+        </div>
+        
+        
+    </div>
+  </div>
+
+  <!-- Topbar End -->
+  <!-- Navbar Start -->
+  <div class="container-fluid mb-5 nav1" >
+    <div class="row border-top ">
+        <div class="col pl-0 d-none d-lg-block " style="width:50px">
+            <!-- <img src="../header/img/acc.jpg" alt=""> -->
+           
+            <nav class="collapse show navbar navbar-vertical  align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical" >
+                
+                
+                <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+              
+            </nav>
+        </div>
+        
+          
+         
+        <div class="col-lg-10 p-0">
+            
+           
+             
+              <router-outlet></router-outlet>
+              
+          
+            
+        
+    </div>
+  </div>
+  
+  <!-- Navbar End -->
+  
+  
+  
+

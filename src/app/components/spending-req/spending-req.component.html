@@ -1,0 +1,20 @@
+<h1>Student Pending Request</h1><br>
+<p-table [value]="products" [tableStyle]="{'min-width': '50rem'}">
+    
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="code">Code <p-sortIcon field="code"></p-sortIcon></th>
+            <th pSortableColumn="name" >Name <p-sortIcon field="name"></p-sortIcon></th>
+            <th pSortableColumn="category">Message <p-sortIcon field="category"></p-sortIcon></th>
+            <th pSortableColumn="quantity">Quantity<p-sortIcon field="quantity"></p-sortIcon></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+        <tr>
+            <td>{{product.code}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.quantity}}</td>
+        </tr>
+    </ng-template>
+</p-table>
