@@ -4,12 +4,13 @@
     }
    </style>
    <p-toast position="top-right"></p-toast>
+   
   <div class="container-fluid" [style]="{backgroundColor:'var(--primary-400)'}">
     
     <div class="row align-items-center py-3 ">
         <div class="col-lg-3 d-none d-lg-block">
-            <a href="" class="text-decoration-none" style="display: flex;">
-                <button type="button" pButton pRipple icon="pi pi-bars"  ></button>
+            <a  class="text-decoration-none" style="display: flex;">
+                <button type="button" pButton pRipple icon="pi pi-bars" (click)="visibleSidebar1 =false" ></button>
                 <h1 class="m-0 display-5 font-weight-semi-bold"  style="color: hwb(214 93% 1%);">CRM Dev</h1>
             </a>
         </div>
@@ -25,12 +26,19 @@
         <div class="col pl-0 d-none d-lg-block " style="width:50px">
             <!-- <img src="../header/img/acc.jpg" alt=""> -->
            
-            <nav class="collapse show navbar navbar-vertical  align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical" >
-                
-                
+            <!-- <nav class="collapse show navbar navbar-vertical  align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical" > -->
+             
+              <!-- <p-sidebar [(visible)]="visibleSidebar1" position="middle-left" dismissible="false" >
                 <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+            </p-sidebar> -->
+            <div class="try"  (visible)="visibleSidebar1"  >
+              <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+
+            </div>
+                
+                
               
-            </nav>
+            <!-- </nav> -->
         </div>
         
           

@@ -53,6 +53,14 @@ throw new Error('Method not implemented.');
     this.clickclose.emit(true);
 
   }
+  createId(): string {
+    let id = '';
+    var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    for ( var i = 0; i < 5; i++ ) {
+        id += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return id;
+}
   addproduct(){
     console.log(this.productForm.value)
     this.seasonservice.saveProduct(this.productForm.value,this.modaltype).subscribe(

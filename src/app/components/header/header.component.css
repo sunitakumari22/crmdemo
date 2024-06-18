@@ -57,6 +57,12 @@
     text-align: left;
     background-color: #fff;
   }
+.p-sidebar-active{
+    /* Adjust background properties as needed */
+    backdrop-filter:unset !important;
+    -webkit-backdrop-filter: none !important;
+    /* Other styles to prevent blur */
+}
   
   [tabindex="-1"]:focus:not(:focus-visible) {
     outline: 0 !important;
