@@ -15,6 +15,15 @@ import { SpendingReqComponent } from './components/spending-req/spending-req.com
 import { AcademicSeasonComponent } from './components/academic-season/academic-season.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { authGuard } from './gaurds/auth.guard';
+import { PapperTypeComponent } from './students/papper-type/papper-type.component';
+import { FaqsComponent } from './components/faqs/faqs.component';
+import { FaqheaderComponent } from './components/faqheader/faqheader.component';
+import { FaqdashboardComponent } from './components/faqdashboard/faqdashboard.component';
+import { SettingheaderComponent } from './components/settingheader/settingheader.component';
+import { SettingComponent } from './components/setting/setting.component';
+import { SprofileComponent } from './components/sprofile/sprofile.component';
+import { FaqMsgComponent } from './components/faq-msg/faq-msg.component';
+import { FeedbakFormComponent } from './components/feedbak-form/feedbak-form.component';
 
 export const routes: Routes = [
     {
@@ -23,7 +32,8 @@ export const routes: Routes = [
     },
     {
         'path':'logout',
-        component:LogoutComponent
+        component:LogoutComponent,
+        canActivate:[authGuard],
     },
     
     {
@@ -55,7 +65,11 @@ export const routes: Routes = [
                         {
                             'path':'session',
                             component:AcademicSeasonComponent
-                        }   
+                        },
+                        {
+                            'path':'papper',
+                            component:PapperTypeComponent
+                        }      
                    
                 ]
             },
@@ -75,7 +89,11 @@ export const routes: Routes = [
                     {
                         'path':'feedback',
                         component:FeedbackComponent
-                    }   
+                    } ,
+                    {
+                        'path':'feedform',
+                        component:FeedbakFormComponent
+                    }  
                
             ]
             },
@@ -98,6 +116,48 @@ export const routes: Routes = [
                     }    
                
             ]
+            },
+            {
+                'path':'faqs',
+                component:FaqheaderComponent,
+                children:[
+                    {
+                        'path':'',
+                        component:FaqdashboardComponent
+                    },
+                    {
+                        'path':'dashboard',
+                        component:FaqdashboardComponent
+                    },
+                    {
+                        'path':'faqs',
+                        component:FaqsComponent
+                    },{
+                        'path':'faqmsg',
+                        component:FaqMsgComponent
+                    }
+
+                ]
+                
+            },
+            {
+                'path':'setting',
+                component:SettingheaderComponent,
+                children:[
+                    {
+                        'path':'',
+                        component:SettingComponent
+                    },
+                    {
+                        'path':'dashboard',
+                        component:SettingComponent
+                    },
+                    {
+                        'path':'profile',
+                        component:SprofileComponent
+                    }
+                ]
+                
             },
             
         ]

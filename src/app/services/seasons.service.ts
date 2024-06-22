@@ -1,5 +1,5 @@
  import { Injectable } from '@angular/core';
-import { Product } from '../interfaces/auth';
+import { Product, faqs } from '../interfaces/auth';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
@@ -59,12 +59,12 @@ export class SeasonsService {
 
   }
 
-  getProducts() {
-      return this.http.get<any>(`${this.baseUrl}`)
-      .toPromise()
-      .then(res => <Product[]>res.data)
-      .then(data => { return data; });
-  }
+  // getProducts() {
+  //     return this.http.get<any>(`${this.baseUrl}`)
+  //     .toPromise()
+  //     .then(res => <Product[]>res.data)
+  //     .then(data => { return data; });
+  // }
 
   getProductsWithOrdersSmall() {
       return this.http.get<any>(`${this.baseUrl}`)
@@ -133,4 +133,18 @@ export class SeasonsService {
     return this.http.delete(`http://localhost:3000/products/${productId}`);
 
   }
+  getFaqs():Observable<faqs[]>{
+    return this.http.get<faqs[]>('http://localhost:3000/faqs');
+
+  }
+  // getproducts():Observable<Product[]>{
+  //   return this.http.get<Product[]>(`${this.baseUrl}`);
+
+
+  // }
+  
+  faqMsg(messageDetails:faqs){
+    return this.http.post('http://localhost:3000/faqmsg',messageDetails);
+ }
+
 }
