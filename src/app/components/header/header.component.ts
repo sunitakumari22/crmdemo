@@ -75,13 +75,13 @@ constructor(private primengConfig: PrimeNGConfig ,private messageservice:Message
     {
       label: 'FAQS',
       icon: 'pi pi-fw pi-question-circle',
-      routerLink:'/home/bigLead'
+      routerLink:'/home/faqs'
       
   },
   {
     label: 'Setting',
     icon: 'pi pi-fw pi-cog',
-    routerLink:'/home/bigLead'
+    routerLink:'/home/setting'
     
 },
 {

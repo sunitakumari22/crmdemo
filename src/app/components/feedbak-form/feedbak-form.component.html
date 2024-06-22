@@ -1,0 +1,104 @@
+<!-- <body>
+    <div class="head" style="text-align: center;">
+        <h2>FeedBack Form</h2>
+    </div>
+    <div class="header">
+        <hr>
+    </div>
+    <main class="mt-5">
+        <form [formGroup]="faqform" (ngSubmit)="submitDeatils()" >
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+            <fieldset>
+                <legend>Overall Satisfaction</legend>
+                <div class="star-rating">
+                    <input type="radio" id="star5-1" name="rating1" value="5"><label for="star5-1" title="5 stars"></label>
+                    <input type="radio" id="star4-1" name="rating1" value="4"><label for="star4-1" title="4 stars"></label>
+                    <input type="radio" id="star3-1" name="rating1" value="3"><label for="star3-1" title="3 stars"></label>
+                    <input type="radio" id="star2-1" name="rating1" value="2"><label for="star2-1" title="2 stars"></label>
+                    <input type="radio" id="star1-1" name="rating1" value="1"><label for="star1-1" title="1 star"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Service Quality</legend>
+                <div class="star-rating">
+                    <input type="radio" id="star5-2" name="rating2" value="5"><label for="star5-2" title="5 stars"></label>
+                    <input type="radio" id="star4-2" name="rating2" value="4"><label for="star4-2" title="4 stars"></label>
+                    <input type="radio" id="star3-2" name="rating2" value="3"><label for="star3-2" title="3 stars"></label>
+                    <input type="radio" id="star2-2" name="rating2" value="2"><label for="star2-2" title="2 stars"></label>
+                    <input type="radio" id="star1-2" name="rating2" value="1"><label for="star1-2" title="1 star"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Ease of Use</legend>
+                <div class="star-rating">
+                    <input type="radio" id="star5-3" name="rating3" value="5"><label for="star5-3" title="5 stars"></label>
+                    <input type="radio" id="star4-3" name="rating3" value="4"><label for="star4-3" title="4 stars"></label>
+                    <input type="radio" id="star3-3" name="rating3" value="3"><label for="star3-3" title="3 stars"></label>
+                    <input type="radio" id="star2-3" name="rating3" value="2"><label for="star2-3" title="2 stars"></label>
+                    <input type="radio" id="star1-3" name="rating3" value="1"><label for="star1-3" title="1 star"></label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <textarea id="comments" name="comments" rows="5"></textarea>
+            </fieldset>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body> -->
+<div class="container">
+    <div class="head" style="text-align: center;">
+        <h2>FeedBack Form</h2>
+    </div>
+    <div class="header">
+        <hr>
+    </div>
+    
+    <main>
+        <form  [formGroup]="faqform" (ngSubmit)="submitDeatils()">
+            <fieldset>
+                <label for="email">Email:</label>
+                <!-- <input type="email" id="email" name="email" > -->
+            </fieldset>
+
+            <fieldset>
+                <legend>Overall Satisfaction</legend>
+                <app-star-rating  ></app-star-rating>
+            </fieldset>
+
+            <fieldset>
+                <legend>Service Quality</legend>
+                <app-star-rating ></app-star-rating>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ease of Use</legend>
+                <app-star-rating ></app-star-rating>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <textarea id="comments" formControlName="comments" rows="5"></textarea>
+            </fieldset>
+            <div class="button">
+                <button  type="submit">Submit Feedback</button>
+            </div>
+
+            
+        </form>
+    </main>
+    
+</div>

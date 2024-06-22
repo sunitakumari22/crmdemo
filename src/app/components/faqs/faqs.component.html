@@ -1,0 +1,27 @@
+
+<div class="container m-0 p-0">
+<div class="faq-container">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    
+    <div class="faq-list">
+      <!-- <div class="faq-container" *ngIf="faqList">
+        <div *ngFor="let faq of faqList" class="faq-item">
+          <h3 class="faq-question">{{ faq.question }}</h3>
+          <div class="faq-answer">{{ faq.answer }}</div>
+        </div>
+      </div>
+      
+      <div *ngIf="!faqList">
+        Loading FAQs...
+      </div> -->
+      <mat-accordion class="faq-container">
+        <mat-expansion-panel *ngFor="let faq of faqList">
+          <mat-expansion-panel-header>
+            {{ faq.question }}
+          </mat-expansion-panel-header>
+          <p>{{ faq.answer }}</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>

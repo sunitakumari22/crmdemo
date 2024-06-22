@@ -27,6 +27,13 @@ export class LogoutComponent {
     sessionStorage.clear();
     this.router.navigate(['/']);
   }
+  closeModal(){
+    
+
+  }
+  onclickno():void{
+    
+  }
   
 
 }

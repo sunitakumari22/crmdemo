@@ -1,0 +1,4 @@
+<span class="star" *ngFor="let star of stars; let i = index"
+      (mouseover)="highlight(i)" (mouseleave)="resetStars()" onclick="rate(i)">
+  {{ star ? '★' : '☆' }}
+</span>

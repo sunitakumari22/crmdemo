@@ -1,8 +1,9 @@
 <p-dialog header="Confirmation!" [(visible)]="logoutDialog" [style]="{ width: '450px' }" 
-[modal]="true" [styleClass]="changeColor ? 'energized' : ''" [closable]="false" [draggable]="false">
+[modal]="true" [styleClass]="changeColor ? 'energized' : ''" [closable]="false" [draggable]="true">
   <p style="margin-top: 30px; font-size: 16px; text-align: center; font-weight: bold">Are you sure you want to sign out?</p>
   <ng-template pTemplate="footer">
     <div class="p-grid p-nogutter" style="justify-content: center; gap:10px;">
+      <p-button  (click)="closeModal()" label="cancel" styleClass="p-button-text"></p-button>
       <button pButton type="button" icon="pi pi-check" (click)="onClickYes()" label="Yes" class="yes-button"></button>
       
     </div>

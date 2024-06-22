@@ -95,7 +95,19 @@ export class CloudbytesComponent  implements OnInit{
                   },
                   {
                     label: 'Subject',
-                    icon: 'pi pi-fw pi-user-minus'
+                    icon: 'pi pi-fw pi-user-minus',
+                    items: [
+                        {
+                            label: 'papper',
+                            icon: 'pi pi-fw pi-filter',
+                            routerLink:'papper'
+                           
+                        },
+                        {
+                            icon: 'pi pi-fw pi-bars',
+                            label: 'List'
+                        }
+                    ]
                  },
                   {
                       label: 'Account',

@@ -3,7 +3,7 @@
     [resizable]="false" (onHide)="closeModal()">
     <form [formGroup]="productForm" (ngSubmit)=" addproduct()" >
         
-            <div class="field " >
+            <div class="field m-5 " >
                 <div class="p-float-label "  >
                     <input id="float-input" formControlName="code" type="text"  maxlength="15"pInputText> 
                     <label for="float-input">Code</label>
@@ -11,7 +11,7 @@
                 
                 </div>
             </div>
-            <div class="field">
+            <div class="field m-5">
                 <div class="p-float-label">
                     <input id="float-input" formControlName="name" type="text"  maxlength="20" pInputText> 
                     <label for="float-input">Name</label>
@@ -19,7 +19,7 @@
                 
                 </div>
             </div>
-            <div class="field">
+            <div class="field m-5">
                 <div class="p-float-label">
                     <input id="float-input" formControlName="category" type="text"   maxlength="20" pInputText> 
                     <label for="float-input">Category</label>
@@ -27,9 +27,9 @@
                 
                 </div>
             </div>
-            <div class="field">
+            <div class="field m-5">
                 <div class="p-float-label">
-                    <input id="float-input" formControlName="quantity" type="number" max="6" pInputNumber> 
+                    <input id="float-input" formControlName="quantity" type="number" max="6" pInputText> 
                     <label for="float-input">Quantity</label>
                 
                 

@@ -20,18 +20,22 @@
     display: flex; 
     margin: 0px;
     padding: 0px;
+    
+    
 }
 .dash-box{
     transition: transform .2s;
     cursor: pointer;
-    width: 600px;
+    width: 100%;
     margin: 10px;
     height: 130px;
+    
+   
    
   }
-  .dash-box .monthly-views{
+  /* .dash-box .monthly-views{
     height: 100%;
-  }
+  } */
   .dash-box:hover{
     transform: scale(1.03);
   }
@@ -39,15 +43,7 @@
     border-radius: 3px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   }
-  .read-more{
-   justify-content: flex-end; 
-  }
-  .read-more > p:hover {
-    color: red;
-  }
-  .read-more > p{
-    color: blue;
-  }
+  
   .flex-row{
     display: flex;
     padding: 0 5px 5px 0;
@@ -62,7 +58,7 @@
     transform: scale(1.01);
   }
   
-  @media screen and (min-width : 4001px){
+  /* @media screen and (min-width : 4001px){
     .dash-box{
       height: 12vh;
       width: 300px;
@@ -92,5 +88,123 @@
     .overview-numbers{
       font-size: 2em !important;
     }
+  } */
+  
+   /* @media (max-width: 992px) {
+    .container .card{
+        width: 20%;
+        margin: 0.5rem;
+        background-color: rgb(28, 101, 184);
+        
+    
+    }
   }
   
+  @media (max-width: 768px) {
+    .container .card{
+        width: 20%;
+        margin: 0.5rem;
+        background-color: rgb(28, 101, 184);
+    
+    }
+  } */
+
+
+
+
+
+  
+  /* .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 300px; 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+ 
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    color: #555;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card {
+      flex-basis: 100%;
+    }
+  } */
+  @media (max-width: 768px) {
+    .container{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+     
+      
+
+    }
+     .container .dash-box{
+      transition: transform .2s;
+      cursor: pointer;
+      width: 95%;
+      padding: 10%;
+      height: 130px;
+      border-radius: 15px;
+      
+     
+    }
+    
+  }
+  
+  @media (max-width: 576px) {
+    .container{
+      display: flex;
+      flex-direction: column;
+      padding-left: 2%;
+
+    }
+   .container .dash-box{
+      transition: transform .2s;
+      cursor: pointer;
+      width: 95%;
+      padding: 10%;
+      height: 130px;
+      border-radius: 15px;
+      
+     
+    }
+  }
