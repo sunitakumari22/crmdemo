@@ -5,45 +5,45 @@
       "mobile": "8989898989",
       "email": "sunitaa@gmail.com",
       "password": "123654",
-      "id": "a308"
+      "id": "1"
     },
     {
-      "id": "62fe",
+      "id": "2",
       "name": "siya",
       "mobile": "7895445114",
       "email": "siya@gmail.com",
       "password": "1234"
     },
     {
-      "id": "96b0",
+      "id": "3",
       "name": "siya",
       "mobile": "8585858585",
       "email": "siyaaa@gmail.com",
       "password": "1234"
     },
     {
-      "id": "6f85",
+      "id": "4",
       "name": "siya",
       "mobile": "898989798",
       "email": "nil@gmail.com",
       "password": "siya"
     },
     {
-      "id": "3ac9",
+      "id": "5",
       "name": "siya",
       "mobile": "457896546",
       "email": "sia@gmail.com",
       "password": "1234"
     },
     {
-      "id": "4bcf",
+      "id": "6",
       "name": "siya",
       "mobile": "7878787878",
       "email": "anu@gmail.com",
       "password": "1234"
     },
     {
-      "id": "43f6",
+      "id": "47",
       "name": "siya",
       "mobile": "8987565894",
       "email": "siya1234@gmail.com",
@@ -57,14 +57,14 @@
       "password": "1234"
     },
     {
-      "id": "6253",
+      "id": "8",
       "name": "tanmay",
       "mobile": "8986354421",
       "email": "tanmoy.das@sbu.ac.in",
       "password": "tanmoy"
     },
     {
-      "id": "b543",
+      "id": "9",
       "name": "siya",
       "mobile": "123654789",
       "email": "siyu@gmail.com",
@@ -74,10 +74,10 @@
   "products": [
     {
       "id": "1001",
-      "code": "nillllllll",
+      "code": "sdasasvgdfbb",
       "name": "pihuuuuuuuu",
       "category": "Access34ories",
-      "quantity": 1.2121212121212122e+35
+      "quantity": "6"
     },
     {
       "id": "1002",
@@ -159,18 +159,6 @@
       "quantity": 74,
       "inventoryStatus": "INSTOCK",
       "rating": 5
-    },
-    {
-      "id": "1013",
-      "code": "fldsmn31b",
-      "name": "Grey T-Shirt",
-      "description": "Product Description",
-      "image": "grey-t-shirt.jpg",
-      "price": 48,
-      "category": "Clothing",
-      "quantity": 0,
-      "inventoryStatus": "OUTOFSTOCK",
-      "rating": 3
     },
     {
       "id": "1014",
@@ -407,6 +395,107 @@
       "name": "kajal",
       "category": "perfume",
       "quantity": 10
+    }
+  ],
+  "student": [
+    {
+      "id": "1000",
+      "code": "0967w256",
+      "name": "Theory",
+      "category": "Accessories",
+      "quantity": 24
+    },
+    {
+      "id": "1001",
+      "code": "nvklal433",
+      "name": "Practical",
+      "description": "Product Description",
+      "image": "black-watch.jpg",
+      "price": 72,
+      "category": "Accessories",
+      "quantity": 61,
+      "inventoryStatus": "Availabel",
+      "rating": 4
+    },
+    {
+      "id": "1002",
+      "code": "zz21cz3c1",
+      "name": "corepapper1",
+      "description": "Product Description",
+      "image": "blue-band.jpg",
+      "price": 79,
+      "category": "Fitness",
+      "quantity": 2,
+      "inventoryStatus": "Published",
+      "rating": 3
+    },
+    {
+      "id": "1003",
+      "code": "244wgerg2",
+      "name": "corepapper2",
+      "description": "Product Description",
+      "image": "blue-t-shirt.jpg",
+      "price": 29,
+      "category": "Clothing",
+      "quantity": 25,
+      "inventoryStatus": "Published",
+      "rating": 5
+    },
+    {
+      "id": "1004",
+      "code": "hjsjgwcw,l",
+      "name": "Bracelet",
+      "description": "Product Description",
+      "image": "bracelet.jpg",
+      "price": 15,
+      "category": "Accessories",
+      "quantity": 73,
+      "inventoryStatus": "not Published",
+      "rating": 4
+    }
+  ],
+  "faqs": [
+    {
+      "question": " 1. What is customer relationship management?",
+      "answer": "Customer relationship management refers to the systems and strategies companies use to catalog and track current and prospective client interactions. Along with contact information, various teams may track purchases, the sales funnel, and the customer experience. The purpose of a CRM tool is to build better relationships, leading to more sales and happy customers. [Discover use cases, benefits, and more in our CRM software guide.]",
+      "id": "f2a4"
+    },
+    {
+      "question": "2. What is the difference between CRM and ERP?",
+      "answer": "Enterprise resource planning (ERP) and CRM software are similar, as both help your small business become efficient; however, each system uses a different approach. CRM platforms focus on customer relationships, whereas ERP systems manage internal business processes. Customer service, marketing, and sales reps use CRM solutions. On the other hand, finance, inventory, and procurement professionals leverage ERPs.",
+      "id": "a863"
+    },
+    {
+      "question": "3. Do I need a CRM system for my small business?",
+      "answer": "Basic contact management systems or spreadsheets may work for startups. But as your small business grows, CRM software allows you to fill your sales pipeline and achieve your customer retention goals. Having one data source ensures service and sales reps have the correct information, eliminating the disjointed experiences that lead to dissatisfaction.",
+      "id": "2c80"
+    },
+    {
+      "question": "4. What can CRM software do?",
+      "answer": "CRM tools are relatively flexible, and small businesses can leverage various features to suit their needs. The bottom line is that a cloud-based CRM program puts customer data on a single platform. It lets different departments view previous interactions and personalize follow-up messages.",
+      "id": "3085"
+    },
+    {
+      "question": "5. Do I need a CRM system for my small business?",
+      "answer": "Basic contact management systems or spreadsheets may work for startups. But as your small business grows, CRM software allows you to fill your sales pipeline and achieve your customer retention goals. Having one data source ensures service and sales reps have the correct information, eliminating the disjointed experiences that lead to dissatisfaction.",
+      "id": "fd31"
+    },
+    {
+      "question": "6. Do I need a CRM system for my small business?",
+      "answer": "Basic contact management systems or spreadsheets may work for startups. But as your small business grows, CRM software allows you to fill your sales pipeline and achieve your customer retention goals. Having one data source ensures service and sales reps have the correct information, eliminating the disjointed experiences that lead to dissatisfaction.",
+      "id": "07e1"
+    },
+    {
+      "question": "7. Do I need a CRM system for my small business?",
+      "answer": "Basic contact management systems or spreadsheets may work for startups. But as your small business grows, CRM software allows you to fill your sales pipeline and achieve your customer retention goals. Having one data source ensures service and sales reps have the correct information, eliminating the disjointed experiences that lead to dissatisfaction.",
+      "id": "c919"
+    }
+  ],
+  "faqmsg": [
+    {
+      "id": "87e6",
+      "email": "siya@gmail.com",
+      "message": "hum tum "
     }
   ]
 }
