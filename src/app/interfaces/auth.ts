@@ -17,3 +17,9 @@ export interface Product {
     image?:string;
     rating?:number;
 }
+
+export interface faqs {
+    
+    question:string;
+    answer:string;
+}
