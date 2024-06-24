@@ -55,7 +55,9 @@ export class LoginComponent {
     response=>{
       if(response.length>0&& response[0].password === password){
         sessionStorage.setItem('email',email as string);
+        // sessionStorage.setItem('Name', name as string);
         // sessionStorage.setItem('name',name as string);
+        sessionStorage.setItem('currentUser', JSON.stringify(response))
         localStorage.setItem('currentUser', JSON.stringify(response));
 
         // localStorage.setItem('lastLoggedInUser', JSON.stringify({ displayImageUrl: response.applicationUser.displayImageUrl , userName: response.applicationUser.userName }));

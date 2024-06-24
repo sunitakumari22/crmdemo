@@ -1,4 +1,13 @@
-<span class="star" *ngFor="let star of stars; let i = index"
+<!-- <span class="star" *ngFor="let star of stars; let i = index"
       (mouseover)="highlight(i)" (mouseleave)="resetStars()" onclick="rate(i)">
   {{ star ? '★' : '☆' }}
-</span>
+</span> -->
+<div>
+  <p>{{ questionText }}</p>
+  <form [formGroup]="feedbackForm">
+    <label *ngFor="let i of [1, 2, 3, 4, 5]">
+      <input type="radio" [id]="'rating-' + i" [value]="i" formControlName="rating">
+      {{ i }}
+    </label>
+  </form>
+</div>
