@@ -452,6 +452,13 @@
       "quantity": 73,
       "inventoryStatus": "not Published",
       "rating": 4
+    },
+    {
+      "id": "9212",
+      "questions1": "How would you rate our service?",
+      "questions2": "How satisfied are you with the product quality?",
+      "questions3": "How likely are you to recommend us to a friend?",
+      "questions4": "How would you rate our service?"
     }
   ],
   "faqs": [
@@ -496,6 +503,110 @@
       "id": "87e6",
       "email": "siya@gmail.com",
       "message": "hum tum "
+    }
+  ],
+  "feedback": [
+    {
+      "id": "88d8",
+      "feedback": [
+        {
+          "question": "How satisfied are you with our service?",
+          "rating": 4
+        },
+        {
+          "question": "How likely are you to recommend us to a friend?",
+          "rating": 4
+        },
+        {
+          "question": "How satisfied are you with the product quality?",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "10e4",
+      "feedback": [
+        {
+          "question": "How satisfied are you with our service?",
+          "rating": 2
+        },
+        {
+          "question": "How likely are you to recommend us to a friend?",
+          "rating": 3
+        },
+        {
+          "question": "How satisfied are you with the product quality?",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "4ed4",
+      "feedback": [
+        {
+          "question": "How satisfied are you with our service?",
+          "rating": 3
+        },
+        {
+          "question": "How likely are you to recommend us to a friend?",
+          "rating": 5
+        },
+        {
+          "question": "How satisfied are you with the product quality?",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "7b3e",
+      "feedback": [
+        {
+          "question": "How satisfied are you with our service?",
+          "rating": 3
+        },
+        {
+          "question": "How likely are you to recommend us to a friend?",
+          "rating": 3
+        },
+        {
+          "question": "How satisfied are you with the product quality?",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "0bd3",
+      "feedback": [
+        {
+          "question": "How satisfied are you with our service?",
+          "rating": 4
+        },
+        {
+          "question": "How likely are you to recommend us to a friend?",
+          "rating": 5
+        },
+        {
+          "question": "How satisfied are you with the product quality?",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "6581",
+      "feedback": [
+        {
+          "question": "How satisfied are you with our service?",
+          "rating": 2
+        },
+        {
+          "question": "How likely are you to recommend us to a friend?",
+          "rating": 4
+        },
+        {
+          "question": "How satisfied are you with the product quality?",
+          "rating": 4
+        }
+      ]
     }
   ]
 }
