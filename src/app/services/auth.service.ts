@@ -7,12 +7,14 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  
+  email:string;
 
   userdata=sessionStorage.getItem('currentuser');
   private baseUrl='http://localhost:3000/users'
 
-  constructor( private http:HttpClient) { }
+  constructor( private http:HttpClient) {
+    this.email = sessionStorage.getItem('email')|| 'Guest';
+   }
 
   resisterUser(userDetails:user){
      return this.http.post(`${this.baseUrl}`,userDetails);
@@ -20,7 +22,10 @@ export class AuthService {
   getUserByEmail(email:string):Observable<user[]>{
     
     return this.http.get<user[]>(`${this.baseUrl}?email=${email}`);
+  }
 
+  getdataprofile(email:string):Observable<user[]>{
+    return this.http.get<user[]>(`${this.baseUrl}?email=${email}`);
 
   }
   getregisterUser(user_id:any){
@@ -32,16 +37,13 @@ export class AuthService {
       //   }
       // });
  }
- updateregisteruser(user_id:any,user_dto:any):Observable<user[]>{
-  return this.http.put<user[]>('http://localhost:3000/users',user_id+user_dto);
+//  updateregisteruser(user_id:any,user_dto:any):Observable<user[]>{
+//   return this.http.put<user[]>('http://localhost:3000/users',user_id+user_dto);
 
 
- }
+//  }
 
-  logout() {
-
-    
-}
+  
 
 
 }

@@ -134,4 +134,12 @@ export class StudentService {
       return this.http.delete(`http://localhost:3000/student/${productId}`);
   
     }
+    savefeedback(postData:any){
+        return this.http.post('http://localhost:3000/student',postData);
+
+
+    }
+    getFeedback(): Observable<any[]> {
+        return this.http.get<any[]>(`http://localhost:3000/feedback?limit=5`);
+      }
 }
