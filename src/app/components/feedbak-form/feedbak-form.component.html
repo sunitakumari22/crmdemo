@@ -9,7 +9,7 @@
     </div>
     <form (submit)="submitFeedback()"  style="text-align: center;">
       <div *ngFor="let question of questions" class="question" style="align-items: center; margin: 10px; padding: 10px;">
-        <h1>{{email}}</h1>
+        <!-- <h1>{{email}}</h1> -->
         <p>{{ question }}</p>
         <div class="rating">
           <label *ngFor="let rating of [1, 2, 3, 4, 5]">
