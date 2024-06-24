@@ -6,40 +6,58 @@ import { AuthService } from '../../services/auth.service';
 import { MatFormFieldModule } from '@angular/material/form-field'; // Import MatFormFieldModule
 import { MatButtonModule } from '@angular/material/button'; // Import MatButtonModule
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms'; // Import FormsModule for ngModel
-import { MessageService } from 'primeng/api';
-import { Router } from '@angular/router';
+
 import { CardModule } from 'primeng/card';
 import { CommonModule } from '@angular/common';
-import { BehaviorSubject } from 'rxjs';
+
+
 import { HttpClient } from '@angular/common/http';
+import { ToastModule } from 'primeng/toast';
+import { ToolbarModule } from 'primeng/toolbar';
 @Component({
   selector: 'app-sprofile',
   standalone: true,
-  imports: [ MatExpansionModule,MatCardModule,MatFormFieldModule,MatButtonModule,FormsModule,CardModule,ReactiveFormsModule,CommonModule ],
+  imports: [ MatExpansionModule,MatCardModule,MatFormFieldModule,MatButtonModule,FormsModule,CardModule,
+    ReactiveFormsModule,CommonModule ,ToastModule,ToolbarModule],
   templateUrl: './sprofile.component.html',
   styleUrl: './sprofile.component.css'
 })
 export class SprofileComponent implements OnInit {
-  // user_id=sessionStorage.getItem('id')
-  constructor(private authservice:AuthService
-
-  ){
-
+ 
+  
+//  user!: [
+//     name:[''],
+//     email: [''],
+//     mobile:['']
+//   ];
+  users: user[]=[]; 
+  email: string;
+studentProfileSearchGroup: FormGroup<any> | undefined;
+  
+  constructor(private authservice:AuthService,private httpclient:HttpClient){
+    this.email = sessionStorage.getItem('email')|| 'Guest';
   }
-  ngOnInit(): void {
+
+  ngOnInit() {
+    this.saveProfile();
+  }
+
+  saveProfile() {
+    const email=sessionStorage.getItem('email')
     
+    this.authservice.getdataprofile(email as string).subscribe(result=>{
+      console.log(result);
+      this.users=result
+      
+      
+
+      
+    })
+   
    
   }
-  getprofiledata(){
-    console.log(sessionStorage.getItem('currentUser'))
-    const email=sessionStorage.getItem('email')
-    this.authservice.getUserByEmail(email as string).subscribe(
-      response=>{
-        console.log(response)
-      })
-    
-    
-  }
+
+
  
   
   
